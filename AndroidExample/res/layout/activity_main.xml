@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--	orientation: định hướng.
+    		vertial: ngang.
+    		horizontal: dọc. -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_android" />
+    <!--	fill_parent: lấp đầy parent theo chiều xác định.
+    		wrap_content: bao gọn nội dung.
+    		layout_width: xác định chiều rộng.
+    		layout_height: xác định chiều cao. -->
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message"
+        android:inputType="text" />
+    <!--	@+id/nameOfView: sẽ tự tạo id trong tệp R.java lúc biên dịch. -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/touch_here" 
+        android:onClick="sendMessage"/>
+
+</LinearLayout>
