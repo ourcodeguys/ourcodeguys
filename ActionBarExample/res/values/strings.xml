@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActionBarExample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Touch Search or Settings button</string>
+    <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="action_search">Search</string>
+
+</resources>
