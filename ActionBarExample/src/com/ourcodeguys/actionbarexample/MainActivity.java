@@ -1,8 +1,7 @@
 package com.ourcodeguys.actionbarexample;
 
-import com.example.actionbarexample.R;
-
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -10,7 +9,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.actionbarexample.R;
+
 public class MainActivity extends ActionBarActivity {
+	
+	public static final String EXTRA_MESSAGE = "com.ourcodeguys.actionbarexample.MESSAGE";
+	
+	private Intent intent;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +53,10 @@ public class MainActivity extends ActionBarActivity {
 
 		Toast toast = Toast.makeText(context, text, duration);
 		toast.show();
+		// start SettingsActivity
+		intent = new Intent(this, SettingsActivity.class);
+		intent.putExtra(EXTRA_MESSAGE, "Call SettingsActivity");
+		startActivity(intent);
 	}
 
 	private void openSearch() {

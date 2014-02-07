@@ -6,5 +6,6 @@
     <string name="hello_world">Touch Search or Settings button</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
     <string name="action_search">Search</string>
+    <string name="search_result">Search Result: </string>
 
 </resources>
